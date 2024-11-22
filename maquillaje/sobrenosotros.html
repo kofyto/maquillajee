@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAQUILLAJE</title>
+    <link href="https://fonts.google.com/specimen/Playfair+Display" rel="stylesheet"> 
+    <link rel="stylesheet" href="styles.css">
+    <style>
+body {
+    margin: 0; 
+    overflow-x: hidden; 
+}
+.navbar {
+            position: fixed;
+            top: 0px;
+            left: 0;
+            right: 0;
+            height: 60px;
+            background-color: #702535;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            z-index: 1000;
+        }
+
+        .navbar img {
+            height: 90px; 
+            margin-left: 1818px;
+        }
+      
+        .navbar a {
+            color: #702535; 
+            line-height: 200px;
+            font-weight: bold; 
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .navbar a:hover {
+            color: #380c15; 
+            text-decoration: none; 
+        }
+        .link1 {
+    font-family: 'Playfair Display', serif;
+    position: fixed;
+    top: 4px;
+    left: 452px;
+    text-align: center;
+    z-index: 1001;
+    color: #380c15;
+    font-size: 50px;
+    font-weight: 900;
+    text-decoration: none;  
+    padding: 10px 40px;
+    border-radius: 6px;
+    transform: scaleX(220px)scaleY(100px);
+
+    transition: background-color 0.6s ease;
+}
+.link1:hover {
+    background-color: #702535; 
+}
+
+.link1 a {
+    color: #380c15;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  
+}
+.link1 a:hover {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  font-size: 52px;
+}
+
+
+.link2{   font-family: 'Playfair Display', serif;
+    position: fixed;
+    top: 4px;
+    right: 307px;
+    text-align: center;
+    z-index: 1001;
+    color: #380c15;
+    font-size: 50px;
+    font-weight: 900;
+    text-decoration: none;
+    padding: 10px 40px; 
+    border-radius: 6px;
+    transform: scaleX(220px)scaleY(100px);
+    transition: background-color 0.6s ease;
+}
+.link2:hover {
+    background-color: #702535; 
+}
+
+.link2 a {
+    color: #380c15;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  
+}
+.link2 a:hover {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  font-size: 52px;
+}
+
+.background1{
+    position: relative;
+width: 110%;
+height: 180px;
+top: 4%;
+right: 1%;
+background-color:#ffffff;
+z-index: 1;
+
+}
+.background2{
+    position: absolute;
+width: 110%;
+height:800px;
+top: 1000;
+z-index:2;
+right: 0%;
+background-color:#00000063;
+}
+
+.background3{
+    position: absolute;
+width: 110%;
+height:200px;
+top: 800px;
+right: 0%;
+z-index:3;
+background-color:#702535
+}
+
+.background4{
+    position: absolute;
+width: 110%;
+height:200px;
+top: 730px;
+right: 0%;
+z-index:3;
+background-color:#702535
+} 
+
+.background5{
+    position: absolute;
+
+width: 1200px;
+height:200px;
+top: 540px;
+left:18% ;
+z-index:3;
+background-color:#702535
+} 
+.background6{
+    position: absolute;
+
+width: 100%;
+height:4020px;
+top: 1000px;
+left: 0%;
+z-index: 2;
+background-color: #ffffff;
+} 
+
+
+.background7{
+    position: absolute;
+
+width: 1280px;
+height:720px;
+top: 1120px;
+left:0% ;
+z-index:4;
+background: linear-gradient(90deg,#000000a8,#00000028);
+} 
+
+.background6{
+    position: absolute;
+
+width: 100%;
+height:1020px;
+top: 2000px;
+left: 0%;
+z-index: 2;
+background-color: #491420;
+} 
+.background0-1{
+width: 100%;
+height: 800px;
+z-index: 0;
+background: linear-gradient(90deg#000000,#000000);
+
+
+
+}
+
+
+
+.text01{
+    color: #491420;
+    position: absolute;
+    left: 25%;
+    top: 48px;
+font-size: 50px;
+font-weight: 600;
+z-index: 5;
+
+
+}
+.text1{
+    font-family: 'Playfair Display', serif;
+    color: #491420;
+    position: absolute;
+    left: 40%;
+    top: 510px;
+font-size: 70px;
+font-weight: 600;
+z-index: 5;
+
+
+}
+.text1-1{
+    font-family: 'Playfair Display', serif;
+    color: #ffffff;
+    position: fixed;
+    left: 39%;
+    top: -58px;
+font-size: 70px;
+font-weight: 600;
+z-index: 1001;
+}
+.text2{
+    text-align: center;
+    width: 1000px;
+    color: #ffffff;
+    position: absolute;
+    left: 23.5%;
+    top: 702px;
+font-size: 27px;
+font-weight: 600;
+z-index: 5;
+
+
+}
+.text3{
+    color: #d6cccc;
+    position: absolute;
+    left: 1%;
+    top: 200px;
+    text-align: center;
+font-size: 40px;
+font-weight: 600;
+z-index: 5;
+
+
+}
+.text4{
+    color: #412c27;
+    position: absolute;
+    text-align: left;
+    left: 68%;
+    top: 1088px;
+    width: 600px;
+font-size: 40px;
+font-weight: 900;
+z-index: 5;
+
+
+}
+.text5{
+    color: #22060d;
+    position: absolute;
+    text-align: left;
+    left: 2%;
+    top: 1988px;
+    width: 1400px;
+font-size: 50px;
+font-weight: 900;
+z-index: 5;
+
+
+}
+.text6{
+    color: #ffffff;
+    position: absolute;
+    text-align: left;
+    left: 3%;
+    top: 2228px;
+    width: 600px;
+font-size: 42px;
+font-weight: 800;
+z-index: 5;
+
+
+}
+.imagen1{
+    left: 0%;
+    position: absolute;
+    z-index: -1;
+width: 1800px;
+}
+
+.imagen2{
+    top:1120px;
+    left: 0%;
+    position: absolute;
+    z-index: 3;
+width: 1920px;
+
+
+}
+
+.imagen3{
+    top:2220px;
+    left: 40%;
+    position: absolute;
+    z-index: 4;
+width: 1920px;
+
+
+}
+
+
+
+
+
+
+
+
+</style>
+</head>
+<body>
+
+<div class="background1"></div>
+<div class="background2"></div>
+<div class="background3"></div>
+<div class="background4"></div>
+<div class="background5"></div>
+<div class="background6"></div>
+<div class="background7"></div>
+<div class="text01"><p>Más que maquillaje, una forma de brillar</p></div>
+<div class="text1"><p>Glitz y Glam</p></div>
+
+     <div class="text2"><p>Glitz Y Glam es el portal definitivo para quienes buscan resaltar su brillo interior a través del arte del maquillaje. Más que una página, es un espacio donde la belleza, la creatividad y la autoexpresión se encuentran para crear magia. Diseñada pensando en todos los apasionados por el maquillaje, desde los principiantes curiosos hasta los profesionales expertos, 
+        Glitz Y Glam te invita a explorar un mundo lleno de glamour, color y posibilidades infinitas.</p></div>
+     <div class="text3"><p>Un rincón de inspiración infinita
+        En Glitz Y Glam, entendemos que el maquillaje no es solo una rutina diaria, sino una forma de expresión artística. Por eso, encontrarás tutoriales detallados, 
+        reseñas honestas y consejos prácticos para perfeccionar tus técnicas, probar nuevas tendencias y adaptar looks a tu estilo único. Desde un sutil no makeup 
+        makeup para el día a día, hasta dramáticos cut creases o smokey eyes para la noche,
+         aquí tienes la guía que necesitas para brillar con confianza.</p></div>
+     <div class="text4"><p>Explora las tendencias más vibrantes
+        La moda del maquillaje está en constante evolución, y Glitz Y Glam está siempre al tanto de lo último. Descubre los tonos que dominarán la temporada, técnicas que redefinen lo clásico, y herramientas innovadoras que transforman la forma en que aplicamos nuestros productos favoritos. Además, te mostramos cómo adaptar las tendencias globales a tus propias características, asegurando que cada look sea tan único como tú.
+        
+        </p></div>
+     <div class="text5"><p>Productos destacados y recomendaciones honestas
+        </p></div>
+     <div class="text6"><p>Sabemos lo abrumador que puede ser elegir entre una variedad infinita de bases, sombras, delineadores y labiales. Por eso, en Glitz Y Glam nos dedicamos a probar y comparar productos para
+        ofrecerte reseñas sinceras y recomendaciones personalizadas. Ya sea que busques opciones asequibles o marcas de lujo, aquí encontrarás lo que necesitas para completar tu kit ideal.</p></div>
+
+        
+
+     <div class="imagen1"><img src="imagen/fondomaquillaje.jpg" alt="" width="110%"height="800"></div>
+     <div class="imagen2"><img src="imagen/mujer-maquillandose.webp" alt="" width="1280"height="720"></div>
+     <div class="imagen3"><img src="imagen/historia-del-maquillaje.webp" alt="" width="1280"height="720"></div>
+
+     <div class="navbar">
+    
+        <img src="imagen/icon.jpg" alt="Logo Valo3">
+    
+    </div>
+    <div class="text1-1"><p>Glitz Y Gram</p></div>
+
+    <div class="link1"><a href="maquillaje.html">Inicio</a></div>
+    <div class="link2"><a href="productos.html">Productos</a></div>
+    <div class="link1background"></div>
+    <div class="link2background"></div>
+</body>
+
+</body>
+</html>

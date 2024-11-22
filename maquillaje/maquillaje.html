@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAQUILLAJE</title>
+    <link href="https://fonts.google.com/specimen/Playfair+Display" rel="stylesheet"> 
+    <link rel="stylesheet" href="styles.css">
+    <style>
+body {
+    margin: 0; /* Elimina márgenes que puedan causar desbordamiento */
+    overflow-x: hidden; /* Oculta el desbordamiento horizontal */
+}
+.background3 {
+    --start-position: 20px; 
+    animation-delay: 0.1s;
+}
+
+
+@keyframes moveToPosition {
+    from {
+        transform: translateX(var(--start-position, 60px));
+        opacity: 0; 
+        visibility: visible;
+    }
+    to {
+        transform: translateX(0); 
+        opacity: 1; 
+        visibility: visible; 
+    }
+}
+
+.background3,
+.text1,
+.text2,
+.text3 {
+    visibility: hidden; 
+    transform: translateX(60px); 
+    opacity: 0; 
+    animation: moveToPosition 0.9s ease-in-out forwards; 
+}
+
+
+.background3 {
+    --start-position: 20px; 
+    animation-delay: 0.1s;
+}
+
+.text1 {
+    --start-position: 60px; 
+    animation-delay: 0.1s; 
+}
+
+.text2 {
+    --start-position: 50px; 
+    animation-delay: 0.1s; 
+}
+
+.text3 {
+    --start-position: 40px; 
+    animation-delay: 0.1s; 
+}
+
+
+
+.video1{
+            transform: translateY(-100px)
+            translateX(-1%)
+            ;z-index: 1;
+        }
+
+       
+
+
+        .imagen1{
+            position: absolute;
+            top:101px;
+            left: 94.2%;
+            z-index: 5;
+        }
+        
+        .imagen1 img {
+            width: 100px;
+            height: 100px;
+            transition: 0.6s ease;
+            pointer-events: none;
+        }
+
+        .imagen1:hover img{
+            transform: scale(1.1);
+        }
+        
+        .imagen2{
+            position: absolute;
+            top:67px;
+            left: 2%;
+            z-index: 5;
+        }
+        
+        .imagen2 img {
+            width: 100px;
+            height: 100px;
+            transition: 0.6s ease;
+            pointer-events: none;
+        }
+
+        .imagen2:hover img{
+            transform: scale(1.1);
+        }
+        
+        .imagenprod1{
+            position: absolute;
+            top:1040px;
+            left: 9.3%;
+            z-index: 20;
+        }
+        
+
+        .imagenprod1:hover img{
+            transform: scale(1.1);
+        }
+        
+        .imagenprod2{
+            position: absolute;
+            top:1040px;
+            left: 38.3%;
+            z-index: 20;
+        }
+        
+
+        .imagenprod2:hover img{
+            transform: scale(1.1);
+        }
+
+        
+        .imagenprod3{
+            position: absolute;
+            top:1040px;
+            left: 67.5%;
+            z-index: 20;
+        }
+        
+
+        .imagenprod3:hover img{
+            transform: scale(1.1);
+        }
+        
+        .imagenproduct1
+{
+    position: absolute;
+top: 1960px;
+width: 400px;
+height: 400px;
+left: 15%;
+z-index: 10;
+
+
+}
+        .background1 {
+            position: relative;
+            background-color: #702535;
+            width: 110%;
+            left: -2%;
+            height: 150px;
+            z-index: 2;
+            transition:background-color 0.4s ease, color 0.4s ease; 
+    
+        } 
+     
+        .background2 {
+            position: relative;
+            background-color: #ffffff;
+            width: 110%;
+            left: -2%;
+            height: 45px;
+            z-index: 3;
+            transform: translateY(-160px);
+            transition:background-color 0.4s ease, color 0.4s ease; 
+        }
+     
+        .background3 {
+   
+    position: absolute; 
+    top: 700px; 
+    left: 10%;  
+    transform: translate(-50%, 0); 
+    border-radius: 10px;
+    background-color: #702535;
+    width: 250px; 
+    height: 70px;
+    z-index: 4;
+    transition:background-color 0.4s ease, color 0.4s ease; 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    text-align: center ;
+ 
+}
+.background3 a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: block;
+    line-height: 65px;
+}
+
+
+.background3:hover   {
+    background-color: #ffffff; 
+    color: #702535; 
+} 
+.background3 a:hover   {
+    color: #702535; 
+
+}
+
+.background4{
+    position: absolute;
+    background-color: #ffffff;
+    opacity: 80%; 
+    width: 100%;
+    left: 0%;
+    height: 329px;
+    top: 900px;
+    z-index: 3;
+}
+.background5{
+    position: absolute;
+    background-color: #ffffff;
+    opacity: 50%;
+    width: 110%;
+    left: -1%;
+    height: 25px;
+    top: 950px;
+    z-index: 3;
+}
+.background6{
+    position: absolute; 
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.692),rgba(0, 0, 0, 0));
+    opacity: 80%;
+    width: 70%;
+    left: 0%;
+    height: 742px;
+    top: 158.22px;
+    z-index: 2;
+}
+.background7{
+    border-bottom-left-radius: 10px;
+    position: absolute; 
+   background-color: #702535;
+    width: 125px;
+     height: 120px;
+            top:101px;
+            left: 93.5%;
+    z-index: 4;
+    transition:background-color 0.4s ease, color 0.4s ease; 
+    
+}
+.background8{
+   
+    position: absolute; 
+    top: 152px; 
+    left: 50%;  
+    transform: translate(-50%, 0); 
+    border-radius: 10px;
+    background-color: #ffffff;
+    width: 250px; 
+   height: 50px;
+    z-index: 4;
+    transition:background-color 0.4s ease, color 0.4s ease; 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    font-weight: 650;
+    color: #702535;
+    text-align: center ;
+ 
+}
+.background8 a {
+   color: #702535;
+   text-decoration: none;
+   display: block;
+   line-height: 45px;
+}
+
+
+.background8:hover   {
+   background-color: #00000031; 
+   color: #ffffff
+} 
+.background8 a:hover   {
+   color: #ffffff ;
+
+}
+.background9{
+   
+   position: absolute; 
+   top: 152px; 
+   left: 25%;  
+   transform: translate(-50%, 0); 
+   border-radius: 10px;
+   background-color: #ffffff;
+   width: 250px; 
+   height: 50px;
+   z-index: 4;
+   transition:background-color 0.4s ease, color 0.4s ease; 
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   font-size: 20px;
+   font-weight: 650;
+   color: #702535;
+   text-align: center ;
+
+}
+.background9 a {
+   color: #702535;
+   text-decoration: none;
+   display: block;
+   line-height: 45px;
+}
+
+
+.background9:hover   {
+   background-color: #00000031; 
+   color: #ffffff
+} 
+.background9 a:hover   {
+   color: #ffffff ;
+
+}
+.background10{
+   
+   position: absolute; 
+   top: 152px; 
+   left: 75%;  
+   transform: translate(-50%, 0); 
+   border-radius: 10px;
+   background-color: #ffffff;
+   width: 250px; 
+   height: 50px;
+   z-index: 4;
+   transition:background-color 0.4s ease, color 0.4s ease; 
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   font-size: 20px;
+   font-weight: 650;
+   color: #702535;
+   text-align: center ;
+
+}
+.background10 a {
+   color: #702535;
+   text-decoration: none;
+   display: block;
+   line-height: 45px;
+}
+
+
+.background10:hover   {
+   background-color: #00000031; 
+   color: #ffffff
+} 
+.background10 a:hover   {
+   color: #ffffff ;
+
+}
+
+.fondo1
+ {
+    top: 920px;
+    position: absolute;
+    width: 101%;
+    left: -1%;
+height: 700px;
+    background-color: #ffffff;
+z-index: 4;
+
+}
+.fondo2 
+{
+   
+    top: 950px;
+    position: absolute;
+    width: 85%;
+    left: 5%;
+height: 700px;
+background-color: #000000;
+  opacity: 20%;
+z-index: 5;
+
+}
+.fondo3
+ {
+    border-radius: 10px;
+    top: 1000px;
+    position: absolute;
+    width: 26%;
+    left: 7%;
+height: 600px;
+    background-color: #702535;
+z-index: 5;
+
+}
+.fondo4 
+{
+    border-radius: 10px;
+    top: 1000px;
+    position: absolute;
+    width: 26%;
+    left: 36%;
+height: 600px;
+    background-color: #702535;
+z-index: 5;
+
+}
+.fondo5 
+{
+    border-radius: 10px;
+    top: 1000px;
+    position: absolute;
+    width: 26%;
+    left: 65%;
+height: 600px;
+    background-color: #702535;
+z-index: 5;
+
+}
+.fondo6 
+{
+ border-radius: 10px;
+    top: 1015px;
+    position: absolute;
+    width: 26%;
+    left: 66%;
+height: 600px;
+    background-color: #70253559;
+z-index: 5;
+
+}
+.fondo7
+{
+ border-radius: 10px;
+    top: 1015px;
+    position: absolute;
+    width: 26%;
+    left: 37%;
+height: 600px;
+    background-color: #70253559;
+z-index: 5;
+
+}
+.fondo8
+{
+ border-radius: 10px;
+    top: 1015px;
+    position: absolute;
+    width: 26%;
+    left: 8%;
+height: 600px;
+    background-color: #70253559;
+z-index: 5;
+
+}
+
+.fondo1boton
+{
+   
+   position: absolute; 
+   top: 1760px; 
+   left: 49%;  
+   transform: translate(-50%, 0); 
+   border-radius: 10px;
+   background-color: #702535;
+   width: 250px; 
+   height: 70px;
+   z-index: 8;
+   transition:background-color 0.4s ease, color 0.4s ease; 
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   font-size: 25px;
+   color: rgb(255, 255, 255);
+   text-align: center ;
+
+}
+.fondo1boton a {
+   color: rgb(255, 255, 255);
+   text-decoration: none;
+   display: block;
+   line-height: 65px;
+}
+
+
+.fondo1boton:hover   {
+   background-color: #0000005b; 
+   color: #702535; 
+   width: 280px;
+} 
+.fondo1boton a:hover   {
+   color: #702535; 
+
+}
+
+
+.fondo1e2 {
+    
+    top: 1960px;
+    position: absolute;
+    width: 101%;
+    left: 0%;
+height: 100px;
+    background-color: #702535;
+z-index: 5;
+
+}
+.fondo2e2 {
+    border-radius: 10px;
+    top: 1000px;
+    position: absolute;
+    width: 26%;
+    left: 65%;
+height: 600px;
+    background-color: #702535;
+z-index: 5;
+
+}
+.fondo3e2 {
+    border-radius: 10px;
+    top: 1000px;
+    position: absolute;
+    width: 26%;
+    left: 65%;
+height: 600px;
+    background-color: #702535;
+z-index: 5;
+
+}
+.fondo4e2 {
+    border-radius: 10px;
+    top: 1000px;
+    position: absolute;
+    width: 26%;
+    left: 65%;
+height: 600px;
+    background-color: #702535;
+z-index: 5;
+
+}
+.text01{ 
+    
+     font-family: 'Playfair Display', serif;;
+    font-size: 15px;
+    color: #000000;
+    position: absolute; 
+    top: -2px; 
+    left: 41.5%;  
+    transform: translateX(0);
+    opacity: 05;
+    z-index: 5;
+    
+}
+.text1{ 
+    font-weight: 700;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 45px;
+    color: #ffffff;
+    position: absolute; 
+    top: 450px;
+    left: 4%;  
+    transform: translateX(0);
+    opacity: 05;
+    z-index: 4;
+    
+}
+
+
+.text2{font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 25px;
+    font-weight: 800;
+    color: #ffffff;
+    position: absolute; 
+    top: 450px; 
+    left: 4%;  
+    transform: translateX(0);
+    opacity: 05;
+    z-index: 4;
+}
+.text3{font-family: 'Playfair Display', serif;
+font-weight: 600;
+    font-size: 35px;
+    color: #ffffff;
+    position: absolute; 
+    top: 530px; 
+    left: 4%;  
+    transform: translateX(0);
+    opacity: 05;
+    z-index: 4;
+    width: 50%;
+}
+.text4{
+    font-family: 'Playfair Display', serif;
+    font-size: 55px;
+    color: #491420;
+    position: absolute; 
+    top: 16px; 
+    left: 42%;  
+    transform: translateX(0);
+    opacity: 05;
+    z-index: 4;
+    width: 50%;
+}
+
+.text5{
+  font-family: 'Playfair Display', serif;
+    font-size: 35px;
+    color: #ffffff8e;
+    position: absolute; 
+   
+    top: 746px; 
+    left: 34%;  
+    transform: translateX(0);
+    opacity: 05;
+    z-index: 4;
+    width: 50%;
+}
+
+.text1product{
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+    font-size: 30px;
+    color: #ffffff;
+    position: absolute; 
+    top: 1436px; 
+    left: 8.2%;  
+    transform: translateX(0);
+    opacity: 05;
+    z-index: 8;
+    width: 50%;
+}
+.text1-1product{
+  font-family: 'Playfair Display', serif;
+  font-weight: 300;
+    font-size: 30px;
+    color: #ffffff;
+    position: absolute; 
+    top: 1466px; 
+    left: 14.7%;  
+    transform: translateX(0);
+    opacity: 05;
+    z-index: 8;
+    width: 50%;
+}
+.text1-2product{
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+    font-size: 30px;
+    color: #ffffff;
+    position: absolute; 
+    top: 1496px; 
+    left: 18.2%;  
+    transform: translateX(0);
+    opacity: 05;
+    z-index: 8;
+    width: 50%;
+}
+.text2product{
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+    font-size: 28px;
+    color: #ffffff;
+    position: absolute; 
+    top: 1433px; 
+    left: 38.2%;  
+    transform: translateX(0);
+    opacity: 05;
+    z-index: 8;
+    width: 400px;
+    text-align: center;
+}
+.text2-1product{
+  font-family: 'Playfair Display', serif;
+  font-weight: 100;
+    font-size: 30px;
+    color: #ffffff;
+    position: absolute; 
+    top: 1496px; 
+    left: 45.7%;  
+    transform: translateX(0);
+    opacity: 05;
+    z-index: 8;
+    width: 50%;
+}
+.text2-2product{
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+    font-size: 30px;
+    color: #ffffff;
+    position: absolute; 
+    top: 1526px; 
+    left: 47.6%;  
+    transform: translateX(0);
+    opacity: 05;
+    z-index: 8;
+    width: 50%;
+}
+.text3product{
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+    font-size: 30px;
+    color: #ffffff;
+    position: absolute; 
+    top: 1436px; 
+    left: 68.2%;  
+    transform: translateX(0);
+    opacity: 05;
+    z-index: 8;
+    width: 50%;
+}
+.text3-1product{
+  font-family: 'Playfair Display', serif;
+  font-weight: 100;
+    font-size: 30px;
+    color: #ffffff;
+    position: absolute; 
+    top: 1466px; 
+    left: 74.8%;  
+    transform: translateX(0);
+    opacity: 05;
+    z-index: 8;
+    width: 50%;
+}
+.text3-2product{
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+    font-size: 30px;
+    color: #ffffff;
+    position: absolute; 
+    top: 1496px; 
+    left: 76.8%;  
+    transform: translateX(0);
+    opacity: 05;
+    z-index: 8;
+    width: 50%;
+}
+.text6{
+    position: absolute;
+    color: #ffffff;
+    right: 50px;
+top: 2000px;
+z-index: 10;
+font-size: 25px;
+font-weight: 400;
+}
+    </style>
+</head>
+<body>
+
+
+    
+  <div class="background1"></div>
+  <div class="background2"></div>
+  <div class="background3"><a href="productos.html">Compra Ahora</a></div>
+<div class="background4"></div>
+<div class="background5"></div>
+<div class="background6"></div> 
+<div class="background7"></div> 
+<div class="background8"><a href="productos.html">Productos</a></div>
+<div class="background9"><a href="sobrenosotros.html">Sobre nosotros</a></div>
+<div class="background10"><a href="hechopor.html">Hecho por</a></div>
+
+<div class="fondo1"></div>
+  <div class="fondo2"></div>
+  <div class="fondo3"></div>
+<div class="fondo4"></div>
+<div class="fondo5"></div>
+<div class="fondo6"></div>
+<div class="fondo7"></div>
+<div class="fondo8"></div>
+
+
+<div class="fondo1boton"><a href="productos.html">Ver mas</a></div>
+
+<div class="fondo1e2"></div> 
+<div class="fondo2e2"></div> 
+<div class="fondo3e2"></div> 
+<div class="fondo4e2"></div> 
+
+<div class="text01"><p>ENVIOS GRATIS DESPUES DE UN GASTO DE $60</p></div>
+<div class="text1"><p>2024-2025</p></div>
+<div class="text2"><p>Los mejores precios este</p></div>
+<div class="text3"><p>No te pierdas nuestras ofertas al 50% y empieza a agregar a una lista de deseo tu proxima compra</p></div>
+<div class="text4"><p>Glitz Y Glam</p></div>
+<div class="text5"><p>Haz que cada mirada sea inolvidable</p></div>
+<div class="text6"><p>© 2024 Glitz y Glam. Todos los derechos reservados.
+    Queda estrictamente prohibida la reproducción total o parcial de los contenidos de este sitio web sin autorización previa.</p></div>
+
+<div class="text1product"><p>Sombra de Ojos Multiples Colores </p></div>
+<div class="text1-1product"><p>Shadow Pastel</p></div>
+<div class="text1-2product"><p>$40</p></div>
+
+<div class="text2product"><p>Contorno de Maquillaje en Diversos Tonos</p></div>
+<div class="text2-1product"><p>Skin Tone</p></div>
+<div class="text2-2product"><p>$21</p></div>
+
+<div class="text3product"><p>Corrector De Color MakeUp</p></div>
+<div class="text3-1product"><p>Skin Tone</p></div>
+<div class="text3-2product"><p>$3.5</p></div>
+
+
+<a href="maquillajequienessomos.html" target="_blank"></a>
+
+<div class="video1"> <video height="1080" width="1920"autoplay muted loop><source src="imagen/dior.mp4" type="video/mp4"> </video></div>
+
+<div class="imagen1" ><a href="maquillajequienessomos.html" target="_blank">   <img src="imagen/icon.jpg" alt="logo"style="width: 100px; height: 100px;"></div>
+<div class="imagen2"> <img src="imagen/pngwing.com.png" alt="logo"style="width: 60px; height: 60px;"></div>
+
+<div class="imagenprod1" ><a href="sombras overwatch.html" target="_blank">   <img src="imagen/sombras overwatch.jpg" alt="logo"style="width: 400px; height: 400px;"></div>
+    <div class="imagenprod2" ><a href="contornooo.html" target="_blank">   <img src="imagen/contorno.jpg" alt="logo"style="width: 400px; height: 400px;"></div>
+        <div class="imagenprod3" ><a href="correcolor.html" target="_blank">   <img src="imagen/corrector.webp" alt="logo"style="width: 400px; height: 400px;"></div>
+
+          
+           
+        
+</body>
+</html>

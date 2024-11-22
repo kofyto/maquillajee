@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartas de Personaje</title>
+    <link href="https://fonts.google.com/specimen/Playfair+Display" rel="stylesheet"> 
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #d1cece;
+            margin: 40px;
+            padding: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .navbar {
+            position: fixed;
+            top: 0px;
+            left: 0;
+            right: 0;
+            height: 60px;
+            background-color: #702535;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            z-index: 1000;
+        }
+
+        .navbar img {
+            height: 90px; 
+            margin-left: 1818px;
+        }
+      
+        .navbar a {
+            color: #702535; 
+            line-height: 200px;
+            font-weight: bold; 
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .navbar a:hover {
+            color: #380c15; 
+            text-decoration: none; 
+        }
+.text1{
+    font-family: 'Playfair Display', serif;
+position: fixed;
+top:-40px;
+text-align: center;
+z-index: 1001;
+color: #380c15;
+font-size: 50px;
+font-family: 900;
+
+}
+
+.link1 {
+    font-family: 'Playfair Display', serif;
+    position: fixed;
+    top: 4px;
+    left: 452px;
+    text-align: center;
+    z-index: 1001;
+    color: #380c15;
+    font-size: 50px;
+    font-weight: 900;
+    text-decoration: none;  
+    padding: 10px 40px;
+    border-radius: 6px;
+    transform: scaleX(220px)scaleY(100px);
+
+    transition: background-color 0.6s ease;
+}
+.link1:hover {
+    background-color: #702535; 
+}
+
+.link1 a {
+    color: #380c15;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  
+}
+.link1 a:hover {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  font-size: 52px;
+}
+
+
+.link2{   font-family: 'Playfair Display', serif;
+    position: fixed;
+    top: 4px;
+    right: 307px;
+    text-align: center;
+    z-index: 1001;
+    color: #380c15;
+    font-size: 50px;
+    font-weight: 900;
+    text-decoration: none;
+    padding: 10px 40px; 
+    border-radius: 6px;
+    transform: scaleX(220px)scaleY(100px);
+    transition: background-color 0.6s ease;
+}
+.link2:hover {
+    background-color: #702535; 
+}
+
+.link2 a {
+    color: #380c15;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  
+}
+.link2 a:hover {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  font-size: 52px;
+}
+
+
+
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 50px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .card {
+            position: relative;
+            text-align: center;
+            overflow: hidden;
+           
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            background-color: #ffffff;
+        }
+
+        .card:hover {
+            transform: scale(1.15);
+            background-color: #702535;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover img {
+            transform: scale(1.25);
+        }
+
+        .card h3, .card h2 {
+            margin: 50px 0;
+            font-family: 'Playfair Display', serif;
+            font-size: 29px;
+            color: #380c15;
+            font-weight: 700;
+            transition: color 0.3s ease;
+        }
+
+        .card:hover h3, .card:hover h2 {
+            color: #ffffff;
+        }
+
+        .card a {
+            text-decoration: none;
+            color: inherit;
+            display: block; /* Hace clickeable toda la tarjeta */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Primera fila -->
+        <div class="card">
+            <a href="sombras_overwatch.html" target="_blank">
+                <img src="imagen/sombras overwatch.jpg" alt="Sombra de Ojos">
+                <h3>Sombra de Ojo, Múltiples colores</h3>
+                <h2>40$</h2>
+            </a>
+        </div>
+        <div class="card">
+            <a href="contornooo.html" target="_blank">
+                <img src="imagen/contorno.jpg" alt="Contorno">
+                <h3>Contorno de Maquillaje en diversos tonos</h3>
+                <h2>21$</h2>
+            </a>
+        </div>
+        <div class="card">
+            <a href="correcolor.html" target="_blank">
+                <img src="imagen/corrector.webp" alt="Corrector">
+                <h3>Corrector color Make Up</h3>
+                <h2>3.5$</h2>
+            </a>
+        </div>
+        <!-- Segunda fila -->
+        <div class="card">
+            <a href="rimeel.html" target="_blank">
+                <img src="imagen/rimeell.png" alt="Personaje 4">
+                <h3>Rimel Negro Intenso - Make Up</h3>
+                <h2>12.5$</h2>
+            </a>
+        </div>
+        <div class="card">
+            <a href="esponjasdemaquillaje.html" target="_blank">
+                <img src="imagen/esponjas de maquillaje.webp" alt="Personaje 5">
+                <h3> Brochas de Maquillaje Profesional</h3>
+                <h2>15$</h2>
+            </a>
+        </div>
+        <div class="card">
+            <a href="kitdelineado.html" target="_blank">
+                <img src="imagen/kit de deliniadores.webp" alt="Personaje 6">
+                <h3>Kit de Delineado Profesional</h3>
+                <h2>20$</h2>
+            </a>
+        </div>
+        <!-- Tercera fila -->
+        <div class="card">
+            <a href="mascaradepestañas.html" target="_blank">
+                <img src="imagen/mascaradepestañas.jpg" alt="Personaje 7">
+                <h3>Máscaras de Pestañas</h3>
+                <h2>15$</h2>
+            </a>
+        </div>
+        <div class="card">
+            <a href="x4esponja.html" target="_blank">
+                <img src="imagen/esponja-maquillaje-x4-surtido-9919-729159_009919-1_7a0bd30d-03d7-4e97-8609-66e83b8ee947.jpg" alt="Personaje 8">
+                <h3>Esponjas de Maquillaje x4</h3>
+                <h2>10$</h2>
+            </a>
+        </div>
+        <div class="card">
+            <a href="base.html" target="_blank">
+                <img src="imagen/color.jpg" alt="Personaje 9">
+                <h3>Base de Maquillaje Líquida</h3>
+                <h2>15$</h2>
+            </a>
+        </div>
+    </div>
+
+    <div class="navbar">
+    
+        <img src="imagen/icon.jpg" alt="Logo Valo3">
+    
+    </div>
+    <div class="text1"><p>Glitz Y Gram</p></div>
+
+    <div class="link1"><a href="maquillaje.html">Inicio</a></div>
+    <div class="link2"><a href="sobrenosotros.html">Sobre nosotros</a></div>
+    <div class="link1background"></div>
+    <div class="link2background"></div>
+</body>
+</html>

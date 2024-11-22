@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartas de Personaje</title>
+    <link href="https://fonts.google.com/specimen/Playfair+Display" rel="stylesheet"> 
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            margin: 40px;
+            padding: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .navbar {
+            position: fixed;
+            top: 0px;
+            left: 0;
+            right: 0;
+            height: 60px;
+            background-color: #702535;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            z-index: 1000;
+        }
+
+        .navbar img {
+            height: 90px; 
+            margin-left: 1818px;
+        }
+      
+        .navbar a {
+            color: #702535; 
+            line-height: 200px;
+            font-weight: bold; 
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .navbar a:hover {
+            color: #380c15; 
+            text-decoration: none; 
+        }
+        .text1{
+    font-family: 'Playfair Display', serif;
+position: fixed;
+top:-40px;
+text-align: center;
+z-index: 1001;
+color: #ffffff;
+font-size: 50px;
+font-family: 1600;
+
+}
+
+.text2{
+    font-family: 'Playfair Display', serif;
+position: absolute;
+top:210px;
+right: 662px;
+text-align: left;
+z-index: 1001;
+color: #000000;
+font-size:45px;
+font-family: 900;
+
+}
+.text3{
+    font-family: 'Playfair Display', serif;
+position: absolute;
+top:297px;
+right: 1048px;
+text-align: left;
+z-index: 1001;
+color: #000000;
+font-size:34px;
+font-family: 900;
+
+}
+.text4{
+    font-family: 'Playfair Display', serif;
+position: absolute;
+top:347px;
+right: 598px;
+text-align: left;
+z-index: 1001;
+color: #000000ab;
+font-size:29px;
+font-family: 900;
+width: 500px;
+}
+
+
+
+.link1 {
+    font-family: 'Playfair Display', serif;
+    position: fixed;
+    top: 4px;
+    left: 452px;
+    text-align: center;
+    z-index: 1001;
+    color: #380c15;
+    font-size: 50px;
+    font-weight: 700;
+    text-decoration: none;  
+    padding: 10px 40px;
+    border-radius: 6px;
+    transform: scaleX(220px)scaleY(100px);
+
+    transition: background-color 0.6s ease;
+}
+.link1:hover {
+    background-color: #702535; 
+}
+
+.link1 a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  
+}
+.link1 a:hover {
+    color: #380c15;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  font-size: 52px;
+}
+
+
+.link2{   font-family: 'Playfair Display', serif;
+    position: fixed;
+    top: 4px;
+    right: 307px;
+    text-align: center;
+    z-index: 1001;
+    color: #380c15;
+    font-size: 50px;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 10px 40px; 
+    border-radius: 6px;
+    transform: scaleX(220px)scaleY(100px);
+    transition: background-color 0.6s ease;
+}
+.link2:hover {
+    background-color: #702535; 
+}
+
+.link2 a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  
+}
+.link2 a:hover {
+    color: #380c15;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  font-size: 52px;
+}
+
+.link3{   font-family: 'Playfair Display', serif;
+    position: fixed;
+    top: 4px;
+    left: 102px;
+    text-align: center;
+    z-index: 1001;
+    color: #380c15;
+    font-size: 50px;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 10px 40px; 
+    border-radius: 6px;
+    transform: scaleX(220px)scaleY(100px);
+    transition: background-color 0.6s ease;
+}
+.link3:hover {
+    background-color: #702535; 
+}
+
+.link3 a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  
+}
+.link3 a:hover {
+    color: #380c15;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  font-size: 52px;
+}
+
+
+
+.imagen1 img{
+position: absolute;
+left: 220px;
+top: 140px
+}
+
+.background1{
+    position: absolute;
+    background-color: #380c15;
+    border-radius: 8px;
+right: 2px;
+top: 90px;
+width: 101%;
+height: 5px;
+
+}
+
+.background2{
+    position: absolute;
+    background-color: #702535;
+    border-radius: 8px;
+right: 200px;
+top: 247px;
+width: 920px;
+height: 2px;
+
+}
+.background3{
+    
+    position: absolute;
+    background-color: #702535;
+    border-radius: 8px;
+right: 300px;
+top: 487px;
+padding: 20px 40px;
+font-size: 20px;
+text-align: center;
+text-decoration: none;
+color: #ffffff;
+transition: 0.5s ease;
+font-weight: 900;
+}
+.background3:hover{
+    background-color: #380c15;
+    border-radius: 8px;
+right: 300px;
+top: 487px;
+padding: 20px 40px;
+color: #f3f3f3;
+}
+
+
+
+
+.background4{
+    position: absolute;
+    background: linear-gradient(90deg, rgba(44, 44, 44, 0.7), rgba(105, 105, 105, 0.692),rgba(133, 133, 133, 0));
+    border-radius: 8px;
+right: 200px;
+top: 647px;
+width: 920px;
+height: 2px;
+
+}
+</style>
+
+<div class="link1background"></div>
+<div class="link2background"></div>
+
+
+<div class="background1"></div>
+<div class="background2"></div>
+<div class="background3"><p>Compra ahora</p></div>
+<div class="background4"></div>
+
+<div class="navbar">
+    
+    <img src="imagen/icon.jpg" alt="Logo Valo3">
+
+</div>
+<div class="text1"><p>Glitz Y Gram</p></div>
+<div class="text2"><p> Máscaras de Pestañas</p></div>
+<div class="text3"><p>15$</p></div>
+<div class="text4"><p>Eleva tu mirada con el Kit de Máscaras de Pestañas, un set completo para lograr volumen, longitud y definición en cada aplicación. Perfecto para transformar tus pestañas y adaptarse a cualquier estilo,
+     desde un look natural hasta un acabado dramático.</p></div>
+
+
+
+
+<div class="link1"><a href="maquillaje.html">Inicio</a></div>
+<div class="link2"><a href="sobrenosotros.html">Sobre nosotros</a></div>
+<div class="link3"><a href="productos.html">Productos</a></div>
+<div class="link1background"></div>
+<div class="link2background"></div>
+
+<div class="imagen1"><img src="imagen/mascaradepestañas.jpg" alt="tkmili"width="500" height="600"></div>
+</body>
+</html>
